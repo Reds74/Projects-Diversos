@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Entrada de Dados</title>
+    </head>
+
+    <body>
+
+        <input type="text" placeholder="Informe seu nome" id="nome">
+        <input type="text" placeholder="Informe seu sobrenome" id="sobrenome">
+
+        <button onclick="minhaFuncao()">Clique-me</button> 
+
+        <script>
+
+            function minhaFuncao(){
+
+                var nome = document.querySelector('#nome').value;
+                var sobrenome = document.querySelector('#sobrenome').value;
+
+                //alert("Nome: "+nome+" Sobrnome: "+sobrenome); //Forma tradicional de retorno no alerta.
+                alert(`Nome: ${nome} ${sobrenome}`); //Usando template String para concatenar Nome e Sobrenome.
+            }
+        </script>
+        
+
+    </body>
+</html>
